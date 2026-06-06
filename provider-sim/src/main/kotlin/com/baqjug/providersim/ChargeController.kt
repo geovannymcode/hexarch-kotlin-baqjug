@@ -14,4 +14,8 @@ class ChargeController {
     @PostMapping("/charge")
     fun charge(@RequestBody req: ChargeRequest): ChargeResponse =
         ChargeResponse(approved = req.amount <= BigDecimal("1000000"), reference = UUID.randomUUID().toString())
+
+    @PostMapping("/v2/charges")
+    fun chargeV2(@RequestBody req: ChargeRequest): ChargeResponse =
+        ChargeResponse(approved = req.amount <= BigDecimal("1000000"), reference = UUID.randomUUID().toString())
 }

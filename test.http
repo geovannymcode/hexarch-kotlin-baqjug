@@ -1,9 +1,9 @@
 ### Probar el endpoint de cobro (charge)
-POST http://localhost:8081/charge
+POST http://localhost:8082/charge
 Content-Type: application/json
 
 {
-  "amount": 5000
+  "amount": 4000
 }
 
 ### Crear un pago (POST)
@@ -11,7 +11,7 @@ POST http://localhost:8080/payments
 Content-Type: application/json
 
 {
-  "amount": 5000
+  "amount": 4000
 }
 
 ###

@@ -4,6 +4,7 @@ plugins {
 	id("org.springframework.boot") version "4.0.6"
 	id("io.spring.dependency-management") version "1.1.7"
 	kotlin("plugin.jpa") version "2.4.0"
+	id("com.vaadin") version "25.1.5"
 }
 
 group = "com.baqjug"
@@ -35,11 +36,14 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("com.vaadin:vaadin-spring-boot-starter")
+	developmentOnly("com.vaadin:vaadin-dev")
 }
 
 dependencyManagement {
 	imports {
 		mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+		mavenBom("com.vaadin:vaadin-bom:25.1.5")
 	}
 }
 
