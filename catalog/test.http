@@ -3,12 +3,12 @@ POST http://localhost:8080/products
 Content-Type: application/json
 
 {
-  "name": "Agua",
-  "amount": 22000
+  "name": "Gaseosa",
+  "amount": 17000
 }
 
 ### listar
-GET http://localhost:8080/products
+GET http://localhost:8080/products?toCurrency=USD
 
 ### validación: esto debe dar 400
 POST http://localhost:8080/products

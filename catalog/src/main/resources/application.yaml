@@ -1,3 +1,10 @@
 spring:
   application:
     name: catalog
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+fx:
+  url: http://localhost:8081
