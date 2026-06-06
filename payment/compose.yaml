@@ -1,9 +1,0 @@
-services:
-  postgres:
-    image: 'postgres:latest'
-    environment:
-      - 'POSTGRES_DB=catalog'
-      - 'POSTGRES_PASSWORD=catalog'
-      - 'POSTGRES_USER=catalog'
-    ports:
-      - '5432'
