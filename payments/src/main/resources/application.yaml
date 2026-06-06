@@ -1,3 +1,9 @@
 spring:
   application:
     name: payments
+  jpa:
+    hibernate:
+      ddl-auto: update
+providers:
+  a:
+    url: http://localhost:8081

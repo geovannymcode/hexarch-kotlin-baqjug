@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: provider-sim
+server:
+  port: 8081
