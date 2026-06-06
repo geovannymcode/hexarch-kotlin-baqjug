@@ -1,0 +1,20 @@
+### crear
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "Agua",
+  "amount": 22000
+}
+
+### listar
+GET http://localhost:8080/products
+
+### validación: esto debe dar 400
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "",
+  "amount": -5
+}
